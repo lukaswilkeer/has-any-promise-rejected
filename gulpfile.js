@@ -21,4 +21,4 @@ const start = async () => {
 	})
 }
 
-export.default = series(compile, start)
+exports.default = series(compile, start)
