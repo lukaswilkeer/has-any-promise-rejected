@@ -4,10 +4,10 @@ const babel = require('gulp-babel')
 
 const compile = () => {
     const compileImperative = src('promise-rejection-imperative.js')
-    	.pipe(babel)
-        .pipe(dest('dist/'))
+    	.pipe(babel())
+      .pipe(dest('dist/'))
 
-    const copyFunctional = () => src('promise-rejection-functional.js')
+    const copyFunctional = src('promise-rejection-functional.js')
     	.pipe(dest('dist/'))
 }
 
