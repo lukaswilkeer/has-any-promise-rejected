@@ -4,7 +4,7 @@ On the study and development using JS i encontered a problem with promises.
 
 If I need to process a list o promises what could happen if one of that get's rejected?
 
-So, I made this repo within approchs to the problem that has none solution on JS language itself.
+So, I made this repo within approches to the problem that has none solution on JS language itself.
 
 PS:
 
