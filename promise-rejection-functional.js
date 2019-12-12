@@ -47,7 +47,7 @@ const mapPromises = async (promises, index = 0, result = []) => {
   const results = await mapPromises(arrayOfPromises).catch((err) => [null])
 
   const resolvedPromises = results.map(handleError) 
-  const haveSomePromiseFailed = resolvedPromises.filter(value => value === null).length > 0
+  const haveSomePromiseFailed = resolvedPromises.filter(resolved => resolved === null).length > 0
 
   assert(haveSomePromiseFailed, true)
 })(promises)
